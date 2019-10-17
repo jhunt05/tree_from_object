@@ -17,6 +17,10 @@ let data = {
 };
 
 function createList(obj) {
+  if (!Object.keys(obj).length) {
+    return;
+  }
+  
   let ul = document.createElement('ul');
 
   for (let item in obj) {
